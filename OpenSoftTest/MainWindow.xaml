@@ -1,0 +1,21 @@
+﻿<Window x:Class="OpenSoftTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="135" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>        
+        <Label Grid.Row="0" Grid.Column="0" Content="Path to Excel file:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        <TextBox Name="tbx_path" Grid.Row="0" Height ="30" Grid.Column="1" Margin="5,5,5,5" IsEnabled="False"/>
+        <Button Name="btn_browse" Grid.Row="0" Grid.Column="2" Width="80" Height="25" Margin="10,0,10,0" Content="Browse" Click="btn_browse_Click"/>
+        <Button Name="btn_start" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Margin="10,0,10,0" Content="Start" Click="btn_start_Click"/>
+    </Grid>
+</Window>
